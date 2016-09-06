@@ -10,7 +10,7 @@ const api = supertest(app);
 
 describe('Sending a POST to /api/div', () => {
   describe('should succeed', () => {
-    it('in multiplying two numbers together', (done) => {
+    it('in diving two numbers', (done) => {
       api.post('/api/div/6/2')
       .expect(200)
       .end((err, res) => {
