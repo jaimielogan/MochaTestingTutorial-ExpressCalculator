@@ -4,8 +4,8 @@ const should = chai.should();
 
 describe('Canary Test', function(){
   it('the string hello should be hello', function(){
-    const hello = 'hello';
+    const hi = 'hi';
 
-    hello.should.be.a('string');
+    hi.should.be.a('string');
   });
 });
