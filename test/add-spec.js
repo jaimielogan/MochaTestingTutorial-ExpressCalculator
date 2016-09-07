@@ -18,6 +18,15 @@ describe('Sending a POST to /api/add', () => {
         done();
       });
     });
+    it('in adding two numbers together', (done) => {
+      api.post('/api/add/2/2')
+      .expect(200)
+      .end((err, res) => {
+        if(err) return done(err);
+        res.body.result.should.be.equal(4);
+        done();
+      });
+    });
   });
   describe('should fail', () => {
     it('when nothing is sent in', (done) => {
